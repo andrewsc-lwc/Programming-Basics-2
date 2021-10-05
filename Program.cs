@@ -17,6 +17,13 @@ namespace Programming_Basics_2
             bool correct = true;
             char letter = 'r';
             string word = "Hello";
+
+            float number1 = 17;
+            float number2 = 12;
+            double result;
+            result = number1 / number2;
+            Console.WriteLine(result);
+            Console.WriteLine(17d / 12d);
         }
     }
 }
