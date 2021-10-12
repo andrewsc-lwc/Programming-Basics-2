@@ -55,5 +55,13 @@ public class Iteration
         {
 			Console.WriteLine("No values entered");
         }
+
+		string z;
+		do
+		{
+			Console.WriteLine("Sup, press n to stop");
+			z = Console.ReadLine();
+		} 
+		while (z != "n");
 	}
 }
