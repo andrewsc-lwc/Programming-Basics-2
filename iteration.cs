@@ -4,17 +4,17 @@ public class Iteration
 {
 	public Iteration()
 	{
-		int temp = 0;
-		int totalTemp = 0;
-		int numOfTemps = 0;
+		double temp = 0;
+		double totalTemp = 0;
+		double numOfTemps = 0;
 		while (temp != -100)
         {
 			Console.WriteLine("Enter next temperature");
-			temp = Convert.ToInt32(Console.ReadLine());
+			temp = Convert.ToDouble(Console.ReadLine());
 			totalTemp += temp;
 			numOfTemps++;
 		}
-		int averageTemp = totalTemp / numOfTemps;
+		double averageTemp = totalTemp / numOfTemps;
 		Console.WriteLine(averageTemp);
 
 		Console.WriteLine("Next attempt");
@@ -63,5 +63,22 @@ public class Iteration
 			z = Console.ReadLine();
 		} 
 		while (z != "n");
+
+		int product;
+		for (int count = 2; count <= 12; count++)
+        {
+			product = 2 * count;
+			Console.WriteLine("2 x " + count + " = " + product);
+        }
+
+		for (int table = 2; table <= 12; table++)
+        {
+			for (int count = 2; count <= 12; count++)
+			{
+				product = table * count;
+				Console.WriteLine(table +" x " + count + " = " + product);
+			}
+		}
+
 	}
 }
