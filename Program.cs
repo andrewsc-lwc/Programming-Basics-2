@@ -6,11 +6,13 @@ namespace Programming_Basics_2
     {
         static void Main(string[] args)
         {
-            
-            
-            
             new Functions();
+
+
             new Iteration();
+
+            
+            
 
             int a = 1;
             int b = 2;
